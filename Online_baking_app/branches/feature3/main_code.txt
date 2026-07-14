@@ -1,0 +1,2 @@
+this is the main code of the testing of all the options of the svm tortise used for the verisoning
+and this is the conflicting line added by me on purpose in order to solve the problem of the merging and to know how it happens behind the scenes

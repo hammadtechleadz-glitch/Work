@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ note.title }}</title>
+
+    <style>
+        body {
+            font-family: system-ui, sans-serif;
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .content {
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #eee;
+            border-radius: 6px;
+            background: #fafafa;
+        }
+
+        small {
+            color: #777;
+            display: block;
+            margin-top: 20px;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>{{ note.title }}</h1>
+
+    <div class="content">
+        {{ note.content|safe }}
+    </div>
+
+    <small>
+        Created on: {{ note.created_at|date:"M d, Y H:i" }}
+    </small>
+
+    <br><br>
+
+    <a href="/">← Back to List</a>
+
+</body>
+</html>

@@ -1,0 +1,3 @@
+this is the main code of the testing of all the options of the svm tortise used for the verisoning
+this is the feature 1 that i have impelentend
+and this is the conflicting line set on purppose

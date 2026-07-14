@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Note</title>
+    <style>
+        body {
+            font-family: system-ui, sans-serif;
+            max-width: 400px;
+            margin: 40px auto;
+            padding: 20px;
+            color: #333;
+        }
+        button {
+            background: #dc3545;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        button:hover {
+            background: #bd2130;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Delete Note</h1>
+    <p>Are you sure you want to delete <strong>"{{ note.title }}"</strong>?</p>
+
+    <form method="POST">
+        {% csrf_token %}
+        <button type="submit">Yes, Delete</button>
+    </form>
+    <br>
+    <a href="/">Cancel</a>
+
+</body>
+</html>

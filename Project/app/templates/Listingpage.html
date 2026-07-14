@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Notes</title>
+    <style>
+        body {
+            font-family: system-ui, sans-serif;
+            max-width: 600px; 
+            margin: 40px auto;
+            padding: 20px;
+            color: #333;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        button {
+            background: #e0e0e0;
+            color: #333;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.9rem;
+        }
+        button:hover {
+            background: #d5d5d5;
+        }
+        .note-item {
+            margin: 20px 0;
+            padding: 15px;
+            border-radius: 6px;
+            background: #fff;
+            border: 1px solid #eee;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        /* Visual anchor styling for Pinned items */
+        .note-item.pinned {
+            background: #fffdf0;
+            border-color: #f1df99;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        }
+        .note-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 8px;
+        }
+        .note-title {
+            margin: 0;
+            font-size: 1.25rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        /* Custom layout design badges for draft status states */
+        .status-badge {
+            font-size: 0.75rem;
+            padding: 2px 6px;
+            border-radius: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .status-badge.draft {
+            background: #e2e8f0;
+            color: #4a5568;
+        }
+        .status-badge.published {
+            background: #c6f6d5;
+            color: #22543d;
+        }
+        .note-item ul, .note-item ol {
+            margin: 5px 0 10px 20px;
+            padding: 0;
+        }
+        .timestamp {
+            color: #666;
+            font-size: 0.85rem;
+            display: block;
+            margin-top: 8px;
+        }
+        .note-actions {
+            margin-top: 12px;
+            padding-top: 10px;
+            border-top: 1px dashed #eee;
+            font-size: 0.9rem;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+        <h1>All Notes</h1>
+        <div style="text-align: right;">
+            <span>Welcome, <strong>{{ user.username }}</strong>!</span>
+            <form action="{% url 'logout' %}" method="POST" style="display: inline; margin-left: 10px;">
+                {% csrf_token %}
+                <button type="submit">Log Out</button>
+            </form>
+        </div>
+    </div>
+
+    <br>
+    <a href="/add/"><strong>+ Add New Note</strong></a>
+    <hr style="border: 0; border-top: 1px solid #ccc; margin: 15px 0;">
+
+    {% for note in records %}
+        <!-- Conditional logic template injects a background wrapper highlight style if pinned -->
+        <div class="note-item {% if note.is_pinned %}pinned{% endif %}">
+            
+            <div class="note-header">
+                <h3 class="note-title">
+                    {% if note.is_pinned %}📌{% endif %}
+                    {{ note.title }}
+                </h3>
+                <!-- Injects specific workflow step label badges automatically -->
+                <span class="status-badge {{ note.status }}">
+                    {{ note.get_status_display }}
+                </span>
+            </div>
+            
+            <div style="margin: 0 0 8px 0;">{{ note.content|safe }}</div>
+            
+            <span class="timestamp">Created: {{ note.created_at|date:"M d, Y H:i" }}</span>
+
+            <div class="note-actions">
+                <a href="/view/{{ note.id }}/">View</a> | 
+                <a href="/edit/{{ note.id }}/">Edit</a> | 
+                <a href="/delete/{{ note.id }}/">Delete</a>
+            </div>
+        </div>
+    {% empty %}
+        <p style="text-align: center; color: #666; margin-top: 40px;">No active notes found.</p>
+    {% endfor %}
+
+</body>
+</html>

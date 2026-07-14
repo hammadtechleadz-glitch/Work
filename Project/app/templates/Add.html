@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Note</title>
+    <link href="https://cdn.jsdelivr.net/npm/quill@2/dist/quill.snow.css" rel="stylesheet">
+</head>
+
+<body>
+
+<h1>Create Note</h1>
+
+<form method="POST">
+    {% csrf_token %}
+
+    <input type="text" name="title" id="id_title" placeholder="Title">
+
+    <input type="hidden" name="content" id="id_content">
+
+    <br><br>
+
+    <div id="editor"></div>
+
+    <br>
+
+    <select name="status" id="id_status">
+        <option value="draft">Draft</option>
+        <option value="published">Published</option>
+    </select>
+
+    <br><br>
+
+    <label>
+        <input type="checkbox" name="is_pinned"> Pin
+    </label>
+
+    <label>
+        <input type="checkbox" name="is_archived"> Archive
+    </label>
+
+    <br><br>
+
+    <button type="submit">Save</button>
+</form>
+
+<script src="https://cdn.jsdelivr.net/npm/quill@2/dist/quill.js"></script>
+
+<script>
+const quill = new Quill("#editor", {
+    theme: "snow"
+});
+
+const hidden = document.getElementById("id_content");
+
+document.querySelector("form").addEventListener("submit", function () {
+    hidden.value = quill.root.innerHTML;
+});
+</script>
+
+</body>
+</html>
