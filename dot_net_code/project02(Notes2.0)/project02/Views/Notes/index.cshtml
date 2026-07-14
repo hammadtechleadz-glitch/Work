@@ -1,0 +1,283 @@
+﻿@model IEnumerable<project02.Models.Notes>
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@{
+    ViewData["Title"] = "Notes App";
+    // This is perfect! Strongly typed variable avoids dynamic dispatch error
+    var activeTagIds = ViewBag.SelectedTagIds as int[] ?? Array.Empty<int>();
+}
+
+
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f6f8;
+        margin: 0;
+        padding: 0;
+    }
+
+    .page-container {
+        width: 900px;
+        margin: 40px auto;
+    }
+
+    .top-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .logout-form,
+    .filter-form {
+        margin: 0;
+    }
+
+    /* Wrap search inputs in a tight row layout */
+    .filter-inputs-row {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        margin-bottom: 12px;
+    }
+
+    .filter-form input,
+    .filter-form select,
+    .filter-form button,
+    .logout-form button {
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        font-size: 14px;
+    }
+
+    .filter-form input {
+        width: 220px;
+    }
+
+    .filter-form button,
+    .logout-form button {
+        background-color: #0078d4;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    .filter-form button:hover,
+    .logout-form button:hover {
+        background-color: #005fa3;
+    }
+
+    .manage-link {
+        display: inline-block;
+        margin-bottom: 20px;
+        text-decoration: none;
+        color: #0078d4;
+        font-weight: bold;
+        margin-right: 15px;
+    }
+
+    .manage-link:hover {
+        text-decoration: underline;
+    }
+
+    .notes-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.08);
+    }
+
+    .notes-header h1 {
+        margin: 0;
+    }
+
+    .create-link {
+        text-decoration: none;
+        background-color: #28a745;
+        color: white;
+        padding: 10px 14px;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+
+    .create-link:hover {
+        background-color: #218838;
+    }
+
+    .notes-list {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .note-card {
+        background-color: white;
+        padding: 18px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.08);
+    }
+
+    .note-title {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .note-content {
+        margin-bottom: 10px;
+        color: #333;
+    }
+
+    .note-category {
+        margin-bottom: 15px;
+        color: #555;
+    }
+
+    .note-actions a {
+        text-decoration: none;
+        padding: 8px 12px;
+        border-radius: 5px;
+        color: white;
+        margin-right: 8px;
+        font-size: 14px;
+        display: inline-block;
+    }
+
+    .edit-btn {
+        background-color: #0078d4;
+    }
+
+    .edit-btn:hover {
+        background-color: #005fa3;
+    }
+
+    .delete-btn {
+        background-color: #dc3545;
+    }
+
+    .delete-btn:hover {
+        background-color: #b52a37;
+    }
+
+    .empty-message {
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        text-align: center;
+        box-shadow: 0 0 10px rgba(0,0,0,0.08);
+    }
+</style>
+
+<div class="page-container">
+
+    <div class="top-bar">
+        @if (SignInManager.IsSignedIn(User))
+        {
+            <form asp-action="Logout" asp-controller="Account" method="post" class="logout-form">
+                <button type="submit">Logout</button>
+            </form>
+        }
+
+        <form method="get" class="filter-form">
+            <!-- 1. Wrapped inputs row neatly and added value retention  the form get paramaters have nmae, value relationship;; the get form reada nd maps the paramters form thses tags <input>
+<select>
+<textarea>
+checked checkboxes / radio buttons
+hidden inputs-->
+            <div class="filter-inputs-row">
+                <input type="text" name="SearchText" value="@ViewBag.SelectedSearchText" placeholder="Search notes..." />
+                
+                <select name="categoryId">
+                    <option value="">Show All Notes</option>
+                    @foreach (var data in ViewBag.Categories)
+                    {
+                        if (ViewBag.SelectedCategoryId != null && (int)ViewBag.SelectedCategoryId == data.id)
+                        {
+                            <option value="@data.id" selected="selected">@data.category</option>
+                        }
+                        else
+                        {
+                            <option value="@data.id">@data.category</option>
+                        }
+                    }
+                </select>
+                <button type="submit">Filter</button>
+            </div>
+
+            <!-- 2. Clean separate line wrapper for tags checkboxes -->
+            <div style="display: flex; flex-wrap: wrap; gap: 15px; align-items: center; padding-top: 8px; border-top: 1px dashed #eee;">
+                <strong style="font-size: 14px; color: #555;">Filter by Tags:</strong>
+                @foreach (var tag in ViewBag.Tags)
+                {
+                    var isChecked = activeTagIds.Contains((int)tag.id) ? "checked" : "";
+                    <label style="display: inline-flex; align-items: center; font-weight: normal; cursor: pointer; font-size: 14px; margin: 0;">
+                        <input type="checkbox" name="selectedTagIds" value="@tag.id" @isChecked style="width: auto; margin-right: 6px; transform: scale(1.1);" />
+                        <span style="background-color: #f0f0f0; padding: 2px 8px; border-radius: 12px; border: 1px solid #ccc;">@tag.name</span>
+                    </label>
+                }
+            </div>
+        </form>
+    </div>
+
+    <a asp-controller="Category" asp-action="Index" class="manage-link">Manage Categories</a>
+    <a asp-controller="Tag" asp-action="Index" class="manage-link">Manage Tags</a>
+
+    <div class="notes-header">
+        <h1>Notes App</h1>
+        <a asp-controller="Notes" asp-action="Create" class="create-link">Create Note</a>
+    </div>
+
+    @if (Model.Any())
+    {
+        <div class="notes-list">
+            @foreach (var item in Model)
+            {
+                <div class="note-card">
+                    <div class="note-title">Title: @item.title</div>
+                    <div class="note-content">Content: @item.content</div>
+                    <div class="note-category">
+                        <strong>Category:</strong>
+                        @(item.category != null ? item.category.category : "Uncategorized")
+                          
+                        <div class="note-tags-list" style="margin-top: 10px;">
+                            <strong>Tags:</strong>
+                            @if (item.NoteTag != null && item.NoteTag.Any())
+                            {
+                                @foreach (var noteTag in item.NoteTag)
+                                {
+                                    <span style="background-color: #0078d4; color: white; padding: 3px 8px; margin-right: 5px; border-radius: 12px; font-size: 12px; display: inline-block;">
+                                        @noteTag.tag.name
+                                    </span>
+                                }
+                            }
+                            else
+                            {
+                                <span style="color: #a19f9d; font-size: 13px; font-style: italic;">No tags</span>
+                            }
+                        </div>
+                    </div>
+
+                    <div class="note-actions">
+                        <a asp-controller="Notes" asp-action="Edit" asp-route-id="@item.id" class="edit-btn">Edit</a>
+                        <a asp-controller="Notes" asp-action="Delete" asp-route-id="@item.id" class="delete-btn">Delete</a>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+    else
+    {
+        <div class="empty-message">
+            <p>No Notes Yet</p>
+        </div>
+    }
+
+</div>

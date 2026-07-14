@@ -1,0 +1,295 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\hfarooq\\source\\repos\\project02\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CF69ECE1-7BD6-2FB0-67C9-DFD44AAC2585}|project02\\project02.csproj|c:\\users\\hfarooq\\source\\repos\\project02\\project02\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF69ECE1-7BD6-2FB0-67C9-DFD44AAC2585}|project02\\project02.csproj|solutionrelative:project02\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF69ECE1-7BD6-2FB0-67C9-DFD44AAC2585}|project02\\project02.csproj|c:\\users\\hfarooq\\source\\repos\\project02\\project02\\views\\tag\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CF69ECE1-7BD6-2FB0-67C9-DFD44AAC2585}|project02\\project02.csproj|solutionrelative:project02\\views\\tag\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF69ECE1-7BD6-2FB0-67C9-DFD44AAC2585}|project02\\project02.csproj|c:\\users\\hfarooq\\source\\repos\\project02\\project02\\views\\notes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CF69ECE1-7BD6-2FB0-67C9-DFD44AAC2585}|project02\\project02.csproj|solutionrelative:project02\\views\\notes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF69ECE1-7BD6-2FB0-67C9-DFD44AAC2585}|project02\\project02.csproj|c:\\users\\hfarooq\\source\\repos\\project02\\project02\\views\\notes\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CF69ECE1-7BD6-2FB0-67C9-DFD44AAC2585}|project02\\project02.csproj|solutionrelative:project02\\views\\notes\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF69ECE1-7BD6-2FB0-67C9-DFD44AAC2585}|project02\\project02.csproj|c:\\users\\hfarooq\\source\\repos\\project02\\project02\\views\\notes\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CF69ECE1-7BD6-2FB0-67C9-DFD44AAC2585}|project02\\project02.csproj|solutionrelative:project02\\views\\notes\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF69ECE1-7BD6-2FB0-67C9-DFD44AAC2585}|project02\\project02.csproj|c:\\users\\hfarooq\\source\\repos\\project02\\project02\\controllers\\notescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF69ECE1-7BD6-2FB0-67C9-DFD44AAC2585}|project02\\project02.csproj|solutionrelative:project02\\controllers\\notescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF69ECE1-7BD6-2FB0-67C9-DFD44AAC2585}|project02\\project02.csproj|c:\\users\\hfarooq\\source\\repos\\project02\\project02\\models\\notetag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF69ECE1-7BD6-2FB0-67C9-DFD44AAC2585}|project02\\project02.csproj|solutionrelative:project02\\models\\notetag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF69ECE1-7BD6-2FB0-67C9-DFD44AAC2585}|project02\\project02.csproj|c:\\users\\hfarooq\\source\\repos\\project02\\project02\\models\\notes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF69ECE1-7BD6-2FB0-67C9-DFD44AAC2585}|project02\\project02.csproj|solutionrelative:project02\\models\\notes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF69ECE1-7BD6-2FB0-67C9-DFD44AAC2585}|project02\\project02.csproj|c:\\users\\hfarooq\\source\\repos\\project02\\project02\\models\\tag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF69ECE1-7BD6-2FB0-67C9-DFD44AAC2585}|project02\\project02.csproj|solutionrelative:project02\\models\\tag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF69ECE1-7BD6-2FB0-67C9-DFD44AAC2585}|project02\\project02.csproj|c:\\users\\hfarooq\\source\\repos\\project02\\project02\\controllers\\tagcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF69ECE1-7BD6-2FB0-67C9-DFD44AAC2585}|project02\\project02.csproj|solutionrelative:project02\\controllers\\tagcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF69ECE1-7BD6-2FB0-67C9-DFD44AAC2585}|project02\\project02.csproj|c:\\users\\hfarooq\\source\\repos\\project02\\project02\\views\\tag\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CF69ECE1-7BD6-2FB0-67C9-DFD44AAC2585}|project02\\project02.csproj|solutionrelative:project02\\views\\tag\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF69ECE1-7BD6-2FB0-67C9-DFD44AAC2585}|project02\\project02.csproj|c:\\users\\hfarooq\\source\\repos\\project02\\project02\\views\\category\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CF69ECE1-7BD6-2FB0-67C9-DFD44AAC2585}|project02\\project02.csproj|solutionrelative:project02\\views\\category\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF69ECE1-7BD6-2FB0-67C9-DFD44AAC2585}|project02\\project02.csproj|c:\\users\\hfarooq\\source\\repos\\project02\\project02\\views\\tag\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CF69ECE1-7BD6-2FB0-67C9-DFD44AAC2585}|project02\\project02.csproj|solutionrelative:project02\\views\\tag\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF69ECE1-7BD6-2FB0-67C9-DFD44AAC2585}|project02\\project02.csproj|c:\\users\\hfarooq\\source\\repos\\project02\\project02\\views\\category\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CF69ECE1-7BD6-2FB0-67C9-DFD44AAC2585}|project02\\project02.csproj|solutionrelative:project02\\views\\category\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF69ECE1-7BD6-2FB0-67C9-DFD44AAC2585}|project02\\project02.csproj|c:\\users\\hfarooq\\source\\repos\\project02\\project02\\views\\category\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CF69ECE1-7BD6-2FB0-67C9-DFD44AAC2585}|project02\\project02.csproj|solutionrelative:project02\\views\\category\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF69ECE1-7BD6-2FB0-67C9-DFD44AAC2585}|project02\\project02.csproj|c:\\users\\hfarooq\\source\\repos\\project02\\project02\\views\\tag\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CF69ECE1-7BD6-2FB0-67C9-DFD44AAC2585}|project02\\project02.csproj|solutionrelative:project02\\views\\tag\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF69ECE1-7BD6-2FB0-67C9-DFD44AAC2585}|project02\\project02.csproj|c:\\users\\hfarooq\\source\\repos\\project02\\project02\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF69ECE1-7BD6-2FB0-67C9-DFD44AAC2585}|project02\\project02.csproj|solutionrelative:project02\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "NotesController.cs",
+              "DocumentMoniker": "C:\\Users\\hfarooq\\source\\repos\\project02\\project02\\Controllers\\NotesController.cs",
+              "RelativeDocumentMoniker": "project02\\Controllers\\NotesController.cs",
+              "ToolTip": "C:\\Users\\hfarooq\\source\\repos\\project02\\project02\\Controllers\\NotesController.cs",
+              "RelativeToolTip": "project02\\Controllers\\NotesController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAFAAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-23T13:26:46.049Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "C:\\Users\\hfarooq\\source\\repos\\project02\\project02\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "project02\\Controllers\\CategoryController.cs",
+              "ToolTip": "C:\\Users\\hfarooq\\source\\repos\\project02\\project02\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "project02\\Controllers\\CategoryController.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAkwIoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-24T17:38:26.804Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\hfarooq\\source\\repos\\project02\\project02\\Views\\Notes\\Edit.cshtml",
+              "RelativeDocumentMoniker": "project02\\Views\\Notes\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\hfarooq\\source\\repos\\project02\\project02\\Views\\Notes\\Edit.cshtml",
+              "RelativeToolTip": "project02\\Views\\Notes\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-24T19:52:08.68Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\hfarooq\\source\\repos\\project02\\project02\\Views\\Notes\\Create.cshtml",
+              "RelativeDocumentMoniker": "project02\\Views\\Notes\\Create.cshtml",
+              "ToolTip": "C:\\Users\\hfarooq\\source\\repos\\project02\\project02\\Views\\Notes\\Create.cshtml",
+              "RelativeToolTip": "project02\\Views\\Notes\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAALMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-24T19:23:02.512Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "index.cshtml",
+              "DocumentMoniker": "C:\\Users\\hfarooq\\source\\repos\\project02\\project02\\Views\\Notes\\index.cshtml",
+              "RelativeDocumentMoniker": "project02\\Views\\Notes\\index.cshtml",
+              "ToolTip": "C:\\Users\\hfarooq\\source\\repos\\project02\\project02\\Views\\Notes\\index.cshtml",
+              "RelativeToolTip": "project02\\Views\\Notes\\index.cshtml",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAAANAAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-24T18:31:48.34Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\hfarooq\\source\\repos\\project02\\project02\\Views\\Tag\\Delete.cshtml",
+              "RelativeDocumentMoniker": "project02\\Views\\Tag\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\hfarooq\\source\\repos\\project02\\project02\\Views\\Tag\\Delete.cshtml",
+              "RelativeToolTip": "project02\\Views\\Tag\\Delete.cshtml",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAAAFwAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-24T18:01:45.566Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "TagController.cs",
+              "DocumentMoniker": "C:\\Users\\hfarooq\\source\\repos\\project02\\project02\\Controllers\\TagController.cs",
+              "RelativeDocumentMoniker": "project02\\Controllers\\TagController.cs",
+              "ToolTip": "C:\\Users\\hfarooq\\source\\repos\\project02\\project02\\Controllers\\TagController.cs",
+              "RelativeToolTip": "project02\\Controllers\\TagController.cs",
+              "ViewState": "AgIAAIIAAAAAAAAAAADwv48AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-24T17:42:08.471Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Tag.cs",
+              "DocumentMoniker": "C:\\Users\\hfarooq\\source\\repos\\project02\\project02\\Models\\Tag.cs",
+              "RelativeDocumentMoniker": "project02\\Models\\Tag.cs",
+              "ToolTip": "C:\\Users\\hfarooq\\source\\repos\\project02\\project02\\Models\\Tag.cs",
+              "RelativeToolTip": "project02\\Models\\Tag.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-24T17:15:15.382Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "NoteTag.cs",
+              "DocumentMoniker": "C:\\Users\\hfarooq\\source\\repos\\project02\\project02\\Models\\NoteTag.cs",
+              "RelativeDocumentMoniker": "project02\\Models\\NoteTag.cs",
+              "ToolTip": "C:\\Users\\hfarooq\\source\\repos\\project02\\project02\\Models\\NoteTag.cs",
+              "RelativeToolTip": "project02\\Models\\NoteTag.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-24T17:17:46.548Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Notes.cs",
+              "DocumentMoniker": "C:\\Users\\hfarooq\\source\\repos\\project02\\project02\\Models\\Notes.cs",
+              "RelativeDocumentMoniker": "project02\\Models\\Notes.cs",
+              "ToolTip": "C:\\Users\\hfarooq\\source\\repos\\project02\\project02\\Models\\Notes.cs",
+              "RelativeToolTip": "project02\\Models\\Notes.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-24T17:18:04.301Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\hfarooq\\source\\repos\\project02\\project02\\Views\\Tag\\Create.cshtml",
+              "RelativeDocumentMoniker": "project02\\Views\\Tag\\Create.cshtml",
+              "ToolTip": "C:\\Users\\hfarooq\\source\\repos\\project02\\project02\\Views\\Tag\\Create.cshtml",
+              "RelativeToolTip": "project02\\Views\\Tag\\Create.cshtml",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAAAFQAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-24T17:57:03.784Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\hfarooq\\source\\repos\\project02\\project02\\Views\\Category\\Delete.cshtml",
+              "RelativeDocumentMoniker": "project02\\Views\\Category\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\hfarooq\\source\\repos\\project02\\project02\\Views\\Category\\Delete.cshtml",
+              "RelativeToolTip": "project02\\Views\\Category\\Delete.cshtml",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAAAFwAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-24T18:01:47.362Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\hfarooq\\source\\repos\\project02\\project02\\Views\\Tag\\Edit.cshtml",
+              "RelativeDocumentMoniker": "project02\\Views\\Tag\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\hfarooq\\source\\repos\\project02\\project02\\Views\\Tag\\Edit.cshtml",
+              "RelativeToolTip": "project02\\Views\\Tag\\Edit.cshtml",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAAFkAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-24T18:00:01.752Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\hfarooq\\source\\repos\\project02\\project02\\Views\\Category\\Edit.cshtml",
+              "RelativeDocumentMoniker": "project02\\Views\\Category\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\hfarooq\\source\\repos\\project02\\project02\\Views\\Category\\Edit.cshtml",
+              "RelativeToolTip": "project02\\Views\\Category\\Edit.cshtml",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAAGMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-24T18:00:05.474Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\hfarooq\\source\\repos\\project02\\project02\\Views\\Category\\Create.cshtml",
+              "RelativeDocumentMoniker": "project02\\Views\\Category\\Create.cshtml",
+              "ToolTip": "C:\\Users\\hfarooq\\source\\repos\\project02\\project02\\Views\\Category\\Create.cshtml",
+              "RelativeToolTip": "project02\\Views\\Category\\Create.cshtml",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAAAGEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-24T17:56:50.41Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "index.cshtml",
+              "DocumentMoniker": "C:\\Users\\hfarooq\\source\\repos\\project02\\project02\\Views\\Tag\\index.cshtml",
+              "RelativeDocumentMoniker": "project02\\Views\\Tag\\index.cshtml",
+              "ToolTip": "C:\\Users\\hfarooq\\source\\repos\\project02\\project02\\Views\\Tag\\index.cshtml",
+              "RelativeToolTip": "project02\\Views\\Tag\\index.cshtml",
+              "ViewState": "AgIAAJ8AAAAAAAAAAAAAAKoAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-24T17:51:56.704Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\hfarooq\\source\\repos\\project02\\project02\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "project02\\Models\\Category.cs",
+              "ToolTip": "C:\\Users\\hfarooq\\source\\repos\\project02\\project02\\Models\\Category.cs",
+              "RelativeToolTip": "project02\\Models\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-24T17:16:07.783Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

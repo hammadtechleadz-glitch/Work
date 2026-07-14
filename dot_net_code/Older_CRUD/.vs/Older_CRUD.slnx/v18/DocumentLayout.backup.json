@@ -1,0 +1,125 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\hfarooq\\source\\repos\\Older_CRUD\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9E8E9E7C-38FB-4C12-A083-0EB369945CB9}|Older_CRUD.csproj|c:\\users\\hfarooq\\source\\repos\\older_crud\\views\\employee\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9E8E9E7C-38FB-4C12-A083-0EB369945CB9}|Older_CRUD.csproj|solutionrelative:views\\employee\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E8E9E7C-38FB-4C12-A083-0EB369945CB9}|Older_CRUD.csproj|c:\\users\\hfarooq\\source\\repos\\older_crud\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E8E9E7C-38FB-4C12-A083-0EB369945CB9}|Older_CRUD.csproj|solutionrelative:models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E8E9E7C-38FB-4C12-A083-0EB369945CB9}|Older_CRUD.csproj|c:\\users\\hfarooq\\source\\repos\\older_crud\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E8E9E7C-38FB-4C12-A083-0EB369945CB9}|Older_CRUD.csproj|solutionrelative:controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E8E9E7C-38FB-4C12-A083-0EB369945CB9}|Older_CRUD.csproj|c:\\users\\hfarooq\\source\\repos\\older_crud\\views\\employee\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9E8E9E7C-38FB-4C12-A083-0EB369945CB9}|Older_CRUD.csproj|solutionrelative:views\\employee\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E8E9E7C-38FB-4C12-A083-0EB369945CB9}|Older_CRUD.csproj|c:\\users\\hfarooq\\source\\repos\\older_crud\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E8E9E7C-38FB-4C12-A083-0EB369945CB9}|Older_CRUD.csproj|solutionrelative:models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E8E9E7C-38FB-4C12-A083-0EB369945CB9}|Older_CRUD.csproj|c:\\users\\hfarooq\\source\\repos\\older_crud\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E8E9E7C-38FB-4C12-A083-0EB369945CB9}|Older_CRUD.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EmployeeController.cs",
+              "DocumentMoniker": "C:\\Users\\hfarooq\\source\\repos\\Older_CRUD\\Controllers\\EmployeeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\EmployeeController.cs",
+              "ToolTip": "C:\\Users\\hfarooq\\source\\repos\\Older_CRUD\\Controllers\\EmployeeController.cs",
+              "RelativeToolTip": "Controllers\\EmployeeController.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAIwCsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-13T09:18:36.836Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "create.cshtml",
+              "DocumentMoniker": "C:\\Users\\hfarooq\\source\\repos\\Older_CRUD\\Views\\Employee\\create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Employee\\create.cshtml",
+              "ToolTip": "C:\\Users\\hfarooq\\source\\repos\\Older_CRUD\\Views\\Employee\\create.cshtml",
+              "RelativeToolTip": "Views\\Employee\\create.cshtml",
+              "ViewState": "AgIAADMAAAAAAAAAAAAqwFEAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-13T10:32:10.747Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "C:\\Users\\hfarooq\\source\\repos\\Older_CRUD\\Models\\Employee.cs",
+              "RelativeDocumentMoniker": "Models\\Employee.cs",
+              "ToolTip": "C:\\Users\\hfarooq\\source\\repos\\Older_CRUD\\Models\\Employee.cs",
+              "RelativeToolTip": "Models\\Employee.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAUwHEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-13T09:03:22.729Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "index.cshtml",
+              "DocumentMoniker": "C:\\Users\\hfarooq\\source\\repos\\Older_CRUD\\Views\\Employee\\index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Employee\\index.cshtml",
+              "ToolTip": "C:\\Users\\hfarooq\\source\\repos\\Older_CRUD\\Views\\Employee\\index.cshtml",
+              "RelativeToolTip": "Views\\Employee\\index.cshtml",
+              "ViewState": "AgIAADcAAAAAAAAAAAAqwDwAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-13T09:20:26.262Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Department.cs",
+              "DocumentMoniker": "C:\\Users\\hfarooq\\source\\repos\\Older_CRUD\\Models\\Department.cs",
+              "RelativeDocumentMoniker": "Models\\Department.cs",
+              "ToolTip": "C:\\Users\\hfarooq\\source\\repos\\Older_CRUD\\Models\\Department.cs",
+              "RelativeToolTip": "Models\\Department.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-13T09:03:13.953Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\hfarooq\\source\\repos\\Older_CRUD\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\hfarooq\\source\\repos\\Older_CRUD\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-13T08:32:03.16Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

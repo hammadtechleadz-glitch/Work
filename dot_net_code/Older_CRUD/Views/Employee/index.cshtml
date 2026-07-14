@@ -1,0 +1,117 @@
+﻿
+@model List<Older_CRUD.Models.Employee>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Employee Index</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f9f9f9;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background: white;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        .status-active {
+            color: green;
+            font-weight: bold;
+        }
+
+        .status-inactive {
+            color: red;
+            font-weight: bold;
+        }
+        .btn-success {
+            background-color: #28a745;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            display: inline-block;
+        }
+
+            .btn-success:hover {
+                background-color: #218838;
+            }
+    </style>
+</head>
+<body>
+
+    <div>
+        <h1>Employee Directory</h1>
+        @Html.ActionLink("Add New Employee", "Create", "Employee", null, new { @class = "btn-success", @style = "padding: 10px;" })
+        <a></a>
+        @if (Model == null || !Model.Any())
+        {
+            <p>No employees found in the database.</p>
+        }
+        else
+        {
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Salary</th>
+                        <th>Hire Date</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.EmployeeId</td>
+                            <td>@item.FirstName @item.LastName</td>
+                            <td>@item.Email</td>
+                            <td>@(string.IsNullOrEmpty(item.Phone) ? "N/A" : item.Phone)</td>
+                            <td>@item.Salary.ToString("C")</td> @* "C" formats it nicely as currency *@
+                            <td>@item.HireDate.ToString("MM/dd/yyyy")</td>
+                            <td>
+                                @if (item.IsActive)
+                                {
+                                    <span class="status-active">Active</span>
+                                }
+                                else
+                                {
+                                    <span class="status-inactive">Inactive</span>
+                                }
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,239 @@
+﻿@model project02.Models.Notes
+@{
+    ViewData["Title"] = "Create Note";
+}
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f6f8;
+        margin: 0;
+        padding: 0;
+    }
+
+    .form-container {
+        width: 500px;
+        margin: 60px auto;
+        background-color: white;
+        padding: 25px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .form-container h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 6px;
+        font-weight: bold;
+    }
+
+    input,
+    textarea,
+    select {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        font-size: 14px;
+    }
+
+    textarea {
+        min-height: 120px;
+        resize: vertical;
+    }
+
+    .validation-message {
+        color: red;
+        font-size: 14px;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        background-color: #0078d4;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 15px;
+    }
+
+    button:hover {
+        background-color: #005fa3;
+    }
+
+    .back-link {
+        display: block;
+        text-align: center;
+        margin-top: 15px;
+        text-decoration: none;
+        color: #0078d4;
+    }
+
+    .back-link:hover {
+        text-decoration: underline;
+    }
+
+    /* --- Visual Tag Styling --- */
+    .tags-display-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 8px;
+        padding: 8px;
+        border: 1px dashed #ccc;
+        border-radius: 5px;
+        background-color: #fafafa;
+        min-height: 40px;
+        align-items: center;
+    }
+
+    .tag-badge {
+        display: inline-flex;
+        align-items: center;
+        background-color: #e1dfdd;
+        color: #323130;
+        padding: 4px 10px;
+        border-radius: 16px;
+        font-size: 13px;
+        font-weight: 600;
+    }
+
+    .tag-close-btn {
+        margin-left: 6px;
+        cursor: pointer;
+        color: #a19f9d;
+        font-weight: bold;
+        font-size: 14px;
+        user-select: none;
+    }
+
+    .tag-close-btn:hover {
+        color: #a80000;
+    }
+</style>
+
+<div class="form-container">
+    <h2>Create Note</h2>
+
+    <form method="post" asp-controller="Notes" asp-action="Create">
+        <div class="form-group">
+            <label>Title</label>
+            <input asp-for="title" />
+            <span asp-validation-for="title" class="validation-message"></span>
+        </div>
+
+        <div class="form-group">
+            <label>Content</label>
+            <textarea asp-for="content"></textarea>
+            <span asp-validation-for="content" class="validation-message"></span>
+        </div>
+
+        <div class="form-group">
+            <label>Category</label>
+            <select asp-for="categoryId">
+                <option value="">Uncategorized</option>
+                @foreach (var data in ViewBag.Categories)
+                {
+                    <option value="@data.id">@data.category</option>
+                }
+            </select>
+        </div>
+
+        <!-- --- New Interactive Tag Selector Group --- -->
+        <div class="form-group">
+            <label>Add Tags</label>
+            <select id="tagDropdown">
+                <option value="">-- Choose a Tag --</option>
+                @foreach (var tag in ViewBag.Tags)
+                {
+                    <option value="@tag.id">@tag.name</option>
+                }
+            </select>
+
+            <!-- Visual display wrapper -->
+            <div class="tags-display-container" id="tagsDisplayContainer">
+                <!-- JavaScript handles painting badges here dynamically -->
+            </div>
+
+            <!-- Container for sending chosen IDs back to C# Form -->
+            <div id="hiddenInputsContainer"></div>
+        </div>
+
+        <button type="submit">Create Note</button>
+    </form>
+
+    <a asp-controller="Notes" asp-action="Index" class="back-link">Back to Notes</a>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+
+    <script>
+        const tagDropdown = document.getElementById('tagDropdown');
+        const tagsDisplayContainer = document.getElementById('tagsDisplayContainer');
+        const hiddenInputsContainer = document.getElementById('hiddenInputsContainer');
+
+        // Track selected tags locally to prevent duplicate selections
+        let selectedTags = [];
+
+        tagDropdown.addEventListener('change', function () {
+            const selectedId = this.value;
+            const selectedName = this.options[this.selectedIndex].text;
+
+            if (!selectedId) return; // Exit if user picked placeholder
+
+            // Guard: Check if tag is already selected
+            if (!selectedTags.some(t => t.id === selectedId)) {
+                selectedTags.push({ id: selectedId, name: selectedName });
+                updateTagInterface();
+            }
+
+            // Reset dropdown back to default placeholder index
+            this.value = "";
+        });
+
+        function updateTagInterface() {
+            // Clear current view rendering
+            tagsDisplayContainer.innerHTML = "";
+            hiddenInputsContainer.innerHTML = "";
+
+            if(selectedTags.length === 0) {
+                tagsDisplayContainer.innerHTML = `<span style="color:#a19f9d; font-size:13px;">No tags selected</span>`;
+            }
+
+            selectedTags.forEach(tag => {
+                // 1. Render Visual UI Badge
+                const badge = document.createElement('span');
+                badge.className = 'tag-badge';
+                badge.innerHTML = `${tag.name} <span class="tag-close-btn" onclick="removeTag('${tag.id}')">×</span>`;
+                tagsDisplayContainer.appendChild(badge);
+
+                // 2. Render Hidden Input for model binding array to C# controller parameter
+                const hiddenInput = document.createElement('input');
+                hiddenInput.type = 'hidden';
+                hiddenInput.name = 'selectedTagIds'; // Must exactly match controller action parameter name
+                hiddenInput.value = tag.id;
+                hiddenInputsContainer.appendChild(hiddenInput);
+            });
+        }
+
+        function removeTag(id) {
+            // Filter array to remove target item
+            selectedTags = selectedTags.filter(t => t.id !== id);
+            updateTagInterface();
+        }
+
+        // Initialize display context on load
+        updateTagInterface();
+    </script>
+}

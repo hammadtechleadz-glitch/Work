@@ -1,0 +1,29 @@
+﻿@model first_.net_project.Models.Note
+
+<h1>Create Note</h1>
+
+<form asp-action="Create" method="post">
+
+    <div>
+        <label asp-for="Title"></label>
+        <input asp-for="Title" />
+        <span asp-validation-for="Title"></span>
+    </div>
+
+    <div>
+        <label asp-for="Content"></label>
+        <textarea asp-for="Content"></textarea>
+        <span asp-validation-for="Content"></span>
+    </div>
+
+    <button type="submit">
+        Save
+    </button>
+
+</form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

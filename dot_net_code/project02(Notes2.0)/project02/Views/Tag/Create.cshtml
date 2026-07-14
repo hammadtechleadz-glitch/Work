@@ -1,0 +1,98 @@
+﻿@model project02.Models.Tag
+@{
+    ViewData["Title"] = "Create Tag";
+}
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f6f8;
+        margin: 0;
+        padding: 0;
+    }
+
+    .form-container {
+        width: 500px;
+        margin: 60px auto;
+        background-color: white;
+        padding: 25px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+        .form-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 6px;
+        font-weight: bold;
+    }
+
+    input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        font-size: 14px;
+    }
+
+    .validation-message {
+        color: red;
+        font-size: 14px;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        background-color: #0078d4;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 15px;
+    }
+
+        button:hover {
+            background-color: #005fa3;
+        }
+
+    .back-link {
+        display: block;
+        text-align: center;
+        margin-top: 15px;
+        text-decoration: none;
+        color: #0078d4;
+    }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+</style>
+
+<div class="form-container">
+    <h2>Create Tags</h2>
+
+    <form method="post" asp-controller="Tag" asp-action="Create">
+        <div class="form-group">
+            <label for="category">Tag Name</label>
+            <input asp-for="name" />
+            <span asp-validation-for="name" class="validation-message"></span>
+        </div>
+
+        <button type="submit">Create Tags</button>
+    </form>
+
+    <a asp-controller="Tag" asp-action="Index" class="back-link">Back to Tags</a>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

@@ -1,0 +1,70 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\hfarooq\\source\\repos\\first_.net_project\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A99684F2-EDA3-C86D-B266-AC10E299E8E7}|first_.net_project\\first_.net_project.csproj|c:\\users\\hfarooq\\source\\repos\\first_.net_project\\first_.net_project\\models\\note.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A99684F2-EDA3-C86D-B266-AC10E299E8E7}|first_.net_project\\first_.net_project.csproj|solutionrelative:first_.net_project\\models\\note.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A99684F2-EDA3-C86D-B266-AC10E299E8E7}|first_.net_project\\first_.net_project.csproj|c:\\users\\hfarooq\\source\\repos\\first_.net_project\\first_.net_project\\controllers\\notescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A99684F2-EDA3-C86D-B266-AC10E299E8E7}|first_.net_project\\first_.net_project.csproj|solutionrelative:first_.net_project\\controllers\\notescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A99684F2-EDA3-C86D-B266-AC10E299E8E7}|first_.net_project\\first_.net_project.csproj|c:\\users\\hfarooq\\source\\repos\\first_.net_project\\first_.net_project\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A99684F2-EDA3-C86D-B266-AC10E299E8E7}|first_.net_project\\first_.net_project.csproj|solutionrelative:first_.net_project\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Note.cs",
+              "DocumentMoniker": "C:\\Users\\hfarooq\\source\\repos\\first_.net_project\\first_.net_project\\Models\\Note.cs",
+              "RelativeDocumentMoniker": "first_.net_project\\Models\\Note.cs",
+              "ToolTip": "C:\\Users\\hfarooq\\source\\repos\\first_.net_project\\first_.net_project\\Models\\Note.cs",
+              "RelativeToolTip": "first_.net_project\\Models\\Note.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-19T12:54:00.974Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "NotesController.cs",
+              "DocumentMoniker": "C:\\Users\\hfarooq\\source\\repos\\first_.net_project\\first_.net_project\\Controllers\\NotesController.cs",
+              "RelativeDocumentMoniker": "first_.net_project\\Controllers\\NotesController.cs",
+              "ToolTip": "C:\\Users\\hfarooq\\source\\repos\\first_.net_project\\first_.net_project\\Controllers\\NotesController.cs",
+              "RelativeToolTip": "first_.net_project\\Controllers\\NotesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-18T21:12:58.41Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\hfarooq\\source\\repos\\first_.net_project\\first_.net_project\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "first_.net_project\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\hfarooq\\source\\repos\\first_.net_project\\first_.net_project\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "first_.net_project\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHgAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-18T21:10:29.366Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

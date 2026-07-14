@@ -1,0 +1,25 @@
+﻿@model IEnumerable<first_.net_project.Models.Note>
+
+<h1>Notes</h1>
+
+<a asp-action="Create">Create Note</a>
+
+<hr />
+
+@foreach (var note in Model)
+{
+    <div>
+        <h3>@note.Title</h3>
+        <p>@note.Content</p>
+        <a asp-action="Details"
+           asp-route-id="@note.Id">
+            Details
+        </a> |
+
+        <a asp-action="Edit" asp-route-id="@note.Id">Edit</a>
+
+        <a asp-action="Delete" asp-route-id="@note.Id">Delete</a>
+    </div>
+
+    <hr />
+}
